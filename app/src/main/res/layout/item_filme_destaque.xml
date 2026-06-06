@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/bg_cine_card"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/imagemFilme"
+        android:layout_width="82dp"
+        android:layout_height="116dp"
+        android:background="@drawable/bg_image_placeholder"
+        android:contentDescription="Poster do filme"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nomeFilme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Filme"
+            android:textColor="@color/cine_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detalhesFilme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Gênero, ano, duração e avaliação"
+            android:textColor="@color/cine_gold"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/descricaoFilme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Descrição curta para apresentar o filme."
+            android:textColor="@color/cine_muted"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSelecionarFilme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="+ Adicionar"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

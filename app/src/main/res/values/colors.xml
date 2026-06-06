@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cine_bg">#080A12</color>
+    <color name="cine_surface">#151827</color>
+    <color name="cine_surface_light">#22263A</color>
+    <color name="cine_gold">#FFC857</color>
+    <color name="cine_red">#E23D45</color>
+    <color name="cine_green">#39D98A</color>
+    <color name="cine_text">#FFF8E7</color>
+    <color name="cine_muted">#B9C0D4</color>
+    <color name="cine_nav">#0B0E19</color>
+    <color name="cine_nav_indicator">#1A2033</color>
+</resources>

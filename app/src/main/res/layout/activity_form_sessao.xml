@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cine_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sessão"
+            android:textColor="@color/cine_text"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText android:id="@+id/etSessaoFilme" style="@style/CineEditText" android:hint="Nome do filme" />
+        <EditText android:id="@+id/etSessaoSala" style="@style/CineEditText" android:hint="Sala" />
+        <EditText android:id="@+id/etSessaoAudio" style="@style/CineEditText" android:hint="Áudio (Dublado/Legendado)" />
+        <EditText android:id="@+id/etSessaoFormato" style="@style/CineEditText" android:hint="Formato (2D/3D)" />
+        <EditText android:id="@+id/etSessaoHorarios" style="@style/CineEditText" android:hint="Horários" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalvarSessao"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="18dp"
+            android:text="Salvar sessão"
+            android:textColor="@color/cine_bg"
+            android:textStyle="bold"
+            app:backgroundTint="@color/cine_gold"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+</ScrollView>

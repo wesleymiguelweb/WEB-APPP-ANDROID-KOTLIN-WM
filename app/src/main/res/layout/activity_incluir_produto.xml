@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cine_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo produto"
+            android:textColor="@color/cine_text"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Cadastre pipoca, brindes e itens relacionados aos filmes."
+            android:textColor="@color/cine_muted"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_cine_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etNomeProduto"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_cine_input"
+                android:hint="Nome do produto"
+                android:inputType="text"
+                android:textColor="@color/cine_text"
+                android:textColorHint="@color/cine_muted" />
+
+            <EditText
+                android:id="@+id/etDescProduto"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_cine_input"
+                android:gravity="top"
+                android:hint="Descrição"
+                android:inputType="textMultiLine"
+                android:textColor="@color/cine_text"
+                android:textColorHint="@color/cine_muted" />
+
+            <EditText
+                android:id="@+id/etPrecoProduto"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_cine_input"
+                android:hint="Preço (ex: 29.90)"
+                android:inputType="numberDecimal"
+                android:textColor="@color/cine_text"
+                android:textColorHint="@color/cine_muted" />
+
+            <EditText
+                android:id="@+id/etImagemProduto"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_cine_input"
+                android:hint="URL da imagem"
+                android:inputType="textUri"
+                android:textColor="@color/cine_text"
+                android:textColorHint="@color/cine_muted" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSalvarInclusao"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="22dp"
+                android:text="Incluir produto"
+                android:textColor="@color/cine_bg"
+                android:textStyle="bold"
+                app:backgroundTint="@color/cine_gold"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

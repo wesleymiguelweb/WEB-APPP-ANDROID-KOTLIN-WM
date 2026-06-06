@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cine_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filme"
+            android:textColor="@color/cine_text"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText android:id="@+id/etFilmeNome" style="@style/CineEditText" android:hint="Nome" />
+        <EditText android:id="@+id/etFilmeDesc" style="@style/CineEditText" android:hint="Descrição" android:minLines="3" />
+        <EditText android:id="@+id/etFilmeGenero" style="@style/CineEditText" android:hint="Gênero" />
+        <EditText android:id="@+id/etFilmeAno" style="@style/CineEditText" android:hint="Ano" android:inputType="number" />
+        <EditText android:id="@+id/etFilmeImagem" style="@style/CineEditText" android:hint="URL da imagem" android:inputType="textUri" />
+        <EditText android:id="@+id/etFilmeAvaliacao" style="@style/CineEditText" android:hint="Avaliação (ex: 4.5)" android:inputType="numberDecimal" />
+        <EditText android:id="@+id/etFilmeDuracao" style="@style/CineEditText" android:hint="Duração em minutos" android:inputType="number" />
+        <EditText android:id="@+id/etFilmeDiretor" style="@style/CineEditText" android:hint="Diretor" />
+        <EditText android:id="@+id/etFilmePais" style="@style/CineEditText" android:hint="País" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalvarFilme"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="18dp"
+            android:text="Salvar filme"
+            android:textColor="@color/cine_bg"
+            android:textStyle="bold"
+            app:backgroundTint="@color/cine_gold"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+</ScrollView>
